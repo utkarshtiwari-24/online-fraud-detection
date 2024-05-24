@@ -1,4 +1,16 @@
-### Steps to Run the Application
+# Aim of the project
+This project aims at detecting fraud websites using AI and improve the security of any system that might be exposed to illegitimate websites. This project uses two AI models for this project:
+
+### Finetuned BERT model on fraudulent and non fraudulent website dataset (https://huggingface.co/Utkarsh-Tiwari/bert-finetuned-fraud-veg-kebab) 
+This AI model was finetuned using the custom dataset of fraud and legitimate online websites, with google-bert/bert-base-uncased as the base model. This model takes in information such as 'Online shop URL', 'Domain length', 'Top domain length', 'Presence of prefix 'www', 'Number  of digits', 'Number  of letters', 'Number  of dots (.)','Number  of hyphens (-)','SSL certificate issuer', 'SSL certificate expire date','Domain registration date'. Then, it classifies the website as 'fraudulent' or 'legitimate', along with the confidence score.
+
+### GPT-4-turbo OpenAI model
+A prompt, with the website content provided as input from the user or by scraping the website url provided by the user, is sent to the GPT-4-turbo model, which in turn generates an output with the fraud percentage score and the reason for the fraud score percentage. For the second api - AI/website_content_review, please use your OpenAI API key in the input request body as shown in the below steps.   
+    
+    
+    
+    
+# Steps to Run the Application
 
 1. Clone the repository to your system.
 2. Open a terminal and navigate to the cloned repository's location.
@@ -17,8 +29,11 @@
    ```
 6. Your Flask server will start running.
 7. Please visit the API Swagger URL at: [http://127.0.0.1:5000/api/](http://127.0.0.1:5000/api/)
-
-### API Documentation
+    
+    
+    
+      
+# API Documentation
 
 There are two APIs available to detect fraudulent websites:
 
