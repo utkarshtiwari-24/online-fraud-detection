@@ -105,5 +105,6 @@ There are two APIs available to detect fraudulent websites:
 
 ---
 
-Note: Please ensure that you provide the complete URL including the 'http' or 'https' substrings.
-Dataset Source for training the BERT model: https://data.mendeley.com/datasets/m7xtkx7g5m/1
+Note: Please ensure that you provide the complete URL including the 'http' or 'https' substrings.  
+Dataset Source for training the BERT model: https://data.mendeley.com/datasets/m7xtkx7g5m/1  
+Third party open source libraries such as whois and openssl were used to collect website ssl and domain information.
