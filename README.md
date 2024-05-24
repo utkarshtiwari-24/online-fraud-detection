@@ -1,29 +1,29 @@
-### Steps to run the application
+### Steps to Run the Application
 
-1. Clone the repository in your system.
-2. Open terminal and go to the cloned repo's location.
-3. Create a virtual env at the same path as the repo:
+1. Clone the repository to your system.
+2. Open a terminal and navigate to the cloned repository's location.
+3. Create a virtual environment in the same directory as the repository:
    ```
    python -m venv venv
    source venv/bin/activate
    ```
-4. Install requirements:
+4. Install the required dependencies:
    ```
    pip install -r requirements.txt
    ```
-5. Go inside the repository and run this command:
+5. Navigate into the repository and execute the following command:
    ```
    python run.py
    ```
 6. Your Flask server will start running.
-7. Please visit the API Swagger URL location: [http://127.0.0.1:5000/api/](http://127.0.0.1:5000/api/)
+7. Please visit the API Swagger URL at: [http://127.0.0.1:5000/api/](http://127.0.0.1:5000/api/)
 
 ### API Documentation
 
-There are two APIs to detect fraud websites:
+There are two APIs available to detect fraudulent websites:
 
 1. **POST - /AI/fraud-ai**  
-   This API takes a website URL as an input and collects information related to the website. It then passes the information to the fine-tuned BERT model available on Hugging Face, which classifies the website information as 'fraudulent' or 'legitimate' along with the confidence score for the given output.
+   This API takes a website URL as input, collects information related to the website, and then passes the information to a fine-tuned BERT model available on Hugging Face. The model classifies the website information as 'fraudulent' or 'legitimate', along with a confidence score for the output.
 
    **Example**:
    - **Request Body**:  
@@ -52,7 +52,7 @@ There are two APIs to detect fraud websites:
      ```
 
 2. **POST - AI/website_content_review**  
-   This API takes either a website URL or the string content of a website (or any string content) as an input, and sends the information to the OpenAI GPT-4-turbo model to generate a fraud percentage score and the reason for the fraud score as the output. If provided both the website content and the URL as the input, the preference would be given to the website content.
+   This API takes either a website URL or the string content of a website (or any string content) as input. It then sends the information to the OpenAI GPT-4-turbo model to generate a fraud percentage score and the reason for the fraud score as output. If both the website content and the URL are provided as input, preference will be given to the website content.
 
    **Example 1**:
    - **Request Body**:  
