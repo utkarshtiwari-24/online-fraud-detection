@@ -109,4 +109,4 @@ Note: Please ensure that you provide the complete URL including the 'http' or 'h
 Dataset Source for training the BERT model: https://data.mendeley.com/datasets/m7xtkx7g5m/1  
 Third party open source libraries such as whois and openssl were used to collect website ssl and domain information.   
 
-### Due to time shortage, won't be able to prepare slides and video but you can reach out to me anytime @ utkarshtiwari2412@gmail.com or on https://www.linkedin.com/in/utkarshtiwari24/ . Please feel free to send me a message.
+### You can reach out to me anytime @ utkarshtiwari2412@gmail.com or on https://www.linkedin.com/in/utkarshtiwari24/ . Please feel free to send me a message if in case of any queries or help needed.
